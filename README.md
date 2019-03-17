@@ -1,7 +1,9 @@
 # Serverless EBS Volume Tag Enforcer | Penny Pincher
 Creating `EBS Volumes` is easy, But maintaining them is hard. Especially when there are no `Tags` to describe their purpose. To make our jobs easier, we will automate the clean up action with AWS Lambda Functions.
-Our Boto Script will do the following actions,
- and Delete the ones without any tags or the explicit
+
+#### Follow this article in [Youtube](https://www.youtube.com/watch?v=UL0VWUnstUU&t=0s&list=PLxzKY3wu0_FKok5gI1v4g4S-g-PLaW9YD&index=9)
+
+Our Boto Script will do the following actions and Delete the ones without any tags or the explicit exclude tags
 1. Scan for `EBS Volumes` in `Available` State
 1. Exclude the Volumes with the `Pre-Approved` Tags
 1. Delete all other EBS Volumes which are,
